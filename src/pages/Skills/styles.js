@@ -49,11 +49,11 @@ const ContainerLogos = styled.div`
   transform: translateX(-190%);
 
   h3 {
-    font-size: 100%;
+    font-size: 90%;
   }
 
   @media screen and (max-width: 920px) {
-    margin: 0;
+    margin: 10px 0;
   }
 
   ${({ revel }) => revel && css`
@@ -61,22 +61,4 @@ const ContainerLogos = styled.div`
   `}
 `
 
-const ContainerLogo = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10px;
-  text-align: center;
-  transition: all 0.5s;
-  max-width: 100px;
-  img {
-    height: 105px;
-    width: 100px;
-  }
-
-  &:hover {
-    transform: translateY(-10%)
-  }
-`
-
-export { Container, ContainerLogos, ContainerLogo };
+export { Container, ContainerLogos };

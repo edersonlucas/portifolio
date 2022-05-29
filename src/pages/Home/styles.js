@@ -56,22 +56,51 @@ const ContainerText = styled.div`
   }
 
   h1 {
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin-top: 25px;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 2rem;
     margin-top: 25px;
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   @media screen and (max-width: 1000px) {
     margin: 0;
     text-align: center;
+
+  h1 {
+  font-size: 2.3rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.3rem;
+  }
+  }
+
+  @media screen and (max-width: 350px) {
+    margin: 0;
+    text-align: center;
+
+  h1 {
+  font-size: 1.6rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
   }
 
   ${({ revel }) => revel && css`

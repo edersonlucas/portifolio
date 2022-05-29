@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, ContainerText } from './styles';
-import ImageDevelopment from '../../images/development.svg';
+import ImageDevelopment from '../../images/home-images/development.svg';
 
 class Home extends React.Component {
   state = {
