@@ -11,7 +11,7 @@ const Container = styled.div`
   margin: 120px auto 50px;
   overflow: hidden;
 
-  #imagestudying {
+  > img {
     max-width: 300px;
     width: 60%;
     margin: 15px auto;
@@ -21,13 +21,13 @@ const Container = styled.div`
   }
 
   ${({ revel }) => revel && css`
-  #imagestudying {
+  > img {
     transform: translateX(0%);
   }
   `}
 
   ${({ neon }) => neon && css`
-  #imagestudying {
+  > img {
     filter: drop-shadow( 3px 3px 7px rgba(195, 58, 252));
   }
   `}

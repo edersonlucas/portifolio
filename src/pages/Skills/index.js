@@ -18,7 +18,6 @@ class Skills extends React.Component {
     elementNeon: false,
     selectedSkill: {},
     asideIsOpen: false,
-    changedSkill: false,
   }
 
   animatedElement = () => {
@@ -37,7 +36,6 @@ class Skills extends React.Component {
   closeAsideSkill = () => {
     this.setState({
       asideIsOpen: false,
-      changedSkill: false,
     })
   }
 
@@ -47,14 +45,12 @@ class Skills extends React.Component {
       this.closeAsideSkill();
       setTimeout(() => {
         this.setState({
-          changedSkill: true,
           asideIsOpen: true,
           selectedSkill: skill,
         });
       },550)
     } else {
       this.setState((prevState) => ({
-        changedSkill: !prevState.changedSkill,
         asideIsOpen: !prevState.asideIsOpen,
         selectedSkill: skill,
       }));
@@ -67,7 +63,7 @@ class Skills extends React.Component {
   }
 
   render() {
-    const { revealElements, elementNeon, selectedSkill, asideIsOpen, changedSkill } = this.state;
+    const { revealElements, elementNeon, selectedSkill, asideIsOpen } = this.state;
     const logosSkills = [
       {
         name: 'HTML5',
@@ -123,8 +119,8 @@ class Skills extends React.Component {
         <ContainerLogos revel={ revealElements }>
           { logosSkills.map((skill) => <SkillCard onClick={ () => this.clickSkill(skill)} skill={ skill } />) }
         </ContainerLogos>
-        <img id="imagestudying" alt="ilustração pessoa lendo um livro" src={ imageStudying } />
-        <AsideSkill changedSkill={ changedSkill } closeAside={ this.closeAsideSkill } isOpen={ asideIsOpen } skill={ selectedSkill } />
+        <img alt="ilustração pessoa lendo um livro" src={ imageStudying } />
+        <AsideSkill closeAside={ this.closeAsideSkill } isOpen={ asideIsOpen } skill={ selectedSkill } />
       </Container>
     )
   }

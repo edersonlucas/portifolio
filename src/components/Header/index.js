@@ -12,7 +12,7 @@ class Header extends React.Component {
         <ContainerLinks>
           <Link to="/">Início</Link>
           <Link to="/skills">Habilidades</Link>
-          <Link>Projetos</Link>
+          <Link to="/projects">Projetos</Link>
           <Link>Contato</Link>
         </ContainerLinks>
       </Container>

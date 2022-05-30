@@ -11,7 +11,7 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   margin: auto;
-  background: rgb(33, 33, 33, 0.8);
+  background: rgb(46, 46, 48, 0.8);
   backdrop-filter: blur(4px);
   z-index: 99;
   transition: all 0.7s;
@@ -74,7 +74,7 @@ const ContainerSkill = styled.div`
     width: 80%;
   }
 
-  ${({ changedSkill }) => changedSkill && css`
+  ${({ isOpen }) => isOpen && css`
     opacity: 1;
     transform: scale(1);
   `}

@@ -4,6 +4,7 @@ import MenuOpen from './components/MenuOpen';
 import { Switch, Route } from 'react-router-dom'
 import Home from './pages/Home';
 import Skills from './pages/Skills'
+import Projects from './pages/Projects';
 
 class App extends React.Component {
   state = {
@@ -23,7 +24,8 @@ class App extends React.Component {
         <MenuOpen onClick={ this.handleMenuClick } menuIsOpen={ menuOpen } />
         <Switch>
           <Route exact path="/" component={ Home } />
-          <Route exact path="/skills" component={ Skills } />
+          <Route path="/skills" component={ Skills } />
+          <Route path="/projects" component={ Projects } />
         </Switch>
       </div>
     )

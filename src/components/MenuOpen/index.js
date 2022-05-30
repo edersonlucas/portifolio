@@ -13,7 +13,7 @@ class MenuOpen extends React.Component {
         <ContainerLinks onClick={ onClick }>
           <Link to="/">Início</Link>
           <Link to="/skills">Habilidades</Link>
-          <Link>Projetos</Link>
+          <Link to="/projects">Projetos</Link>
           <Link>Contato</Link>
         </ContainerLinks>
       </Container>
