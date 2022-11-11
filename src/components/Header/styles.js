@@ -16,7 +16,7 @@ const Container = styled.header`
 
 const Button = styled.button`
     position: absolute;
-    left: 0;
+    right: 50px;
     margin-left: 10px;
     border: none;
     background: transparent;

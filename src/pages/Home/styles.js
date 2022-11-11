@@ -22,9 +22,8 @@ const Container = styled.div`
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
-
     img {
-      margin-top: 20px;
+      display: none;
     }
   }
 
@@ -46,10 +45,6 @@ const ContainerText = styled.div`
   transition: all 1s;
   transform: translateX(-160%);
   margin-right: 50px;
-
-* {
-    margin: 0;
-  }
 
   h3 span {
     color: rgba(195, 58, 252);

@@ -34,6 +34,9 @@ const Container = styled.div`
 
   @media screen and (max-width: 920px) {
     flex-direction: column;
+    > img {
+      display: none;
+    }
   }
 `
 
