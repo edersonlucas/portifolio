@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, ContainerText } from './styles';
+import { Container, ContainerText, ButtonConnect } from './styles';
 import ImageDevelopment from '../../images/home-images/development.svg';
 
 class Home extends React.Component {
@@ -32,8 +32,9 @@ class Home extends React.Component {
       <Container neon={ elementNeon } revel={ revealElements }>
         <ContainerText revel={ revealElements }>
           <h3>Olá, eu sou <span>Ederson Lucas</span></h3>
-          <h1>{`<Web Development Student/>`}</h1>
+          <h1>{`<Desenvolvedor Web FullStack/>`}</h1>
           <h2>{`Seja Bem-Vindo(a) ao Meu Portfólio`}</h2>
+          <ButtonConnect target="_blank" href='https://www.linkedin.com/in/edersonlucas/'>Conectar</ButtonConnect>
         </ContainerText>
         <img alt="ilustração de um desenvolvedor sentado em cima de um notebook codando" src={ ImageDevelopment } />
       </Container>

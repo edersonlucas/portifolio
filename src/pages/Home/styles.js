@@ -104,4 +104,21 @@ const ContainerText = styled.div`
 
 `
 
-export { Container, ContainerText };
+const ButtonConnect = styled.a`
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+  background-color: rgba(195, 58, 252);
+  &:hover {
+    background-color: white;
+    color: rgba(195, 58, 252);
+    cursor: pointer;
+  };
+`
+
+export { Container, ContainerText, ButtonConnect };
