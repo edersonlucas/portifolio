@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Skills from './pages/Skills'
 import Projects from './pages/Projects';
 import Footer from './components/Footer'
+import About from './pages/About';
 
 function App() {
 
@@ -17,13 +18,13 @@ function App() {
         <MenuOpen onClick={ () => setMenuOpen(!menuOpen) } menuIsOpen={ menuOpen } />
         <Switch>
           <Route exact path="/" component={ Home } />
+          <Route path="/about" component={ About } />
           <Route path="/skills" component={ Skills } />
           <Route path="/projects" component={ Projects } />
         </Switch>
         <Footer/>
       </>
     )
-  }
 }
 
 export default App;
