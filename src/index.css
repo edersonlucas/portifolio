@@ -9,9 +9,15 @@ body {
   font-size: 1rem;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 @media  (max-width: 1190px){
   html {
     background-size: auto;
+    overflow: hidden;
   }
 }
 
