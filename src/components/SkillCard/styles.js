@@ -12,6 +12,7 @@ const Container = styled.div`
   img {
     height: 105px;
     width: 100px;
+    margin-bottom: 10px;
   }
 
   &:hover {
