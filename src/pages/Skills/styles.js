@@ -6,10 +6,11 @@ const Container = styled.div`
   justify-content: center;
   max-width: 1200px;
   width: 80%;
-  min-height: calc(100vh - 170px);
   color: white;
-  margin: 120px auto 50px;
   overflow: hidden;
+  height: calc(100vh - 105px);
+  margin: auto;
+  padding: 20px;
 
   > img {
     max-width: 300px;
@@ -32,7 +33,7 @@ const Container = styled.div`
   }
   `}
 
-  @media screen and (max-width: 920px) {
+  @media screen and (max-width: 1000px) {
     flex-direction: column;
     > img {
       display: none;
@@ -44,19 +45,35 @@ const ContainerLogos = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 500px;
+  max-width: 700px;
   width: 100%;
   flex-wrap: wrap;
-  margin-right: 50px;
   transition: all 1s;
   transform: translateX(-190%);
+  overflow-y: auto;
+  height: 100%;
+
+  &::-webkit-scrollbar {
+      width: 5px;
+      border-radius: 5px;
+  };
+
+  &::-webkit-scrollbar-track {
+    background: rgb(48, 48, 50);
+    border-radius: 5px;
+  };
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(195, 58, 252);
+    border-radius: 5px;
+  };
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(206, 110, 246);
+  };
 
   h3 {
     font-size: 90%;
-  }
-
-  @media screen and (max-width: 920px) {
-    margin: 10px 0;
   }
 
   ${({ revel }) => revel && css`
