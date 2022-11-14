@@ -7,9 +7,9 @@ const Container = styled.div`
   color: white;
   max-width: 1200px;
   width: 80%;
-  min-height: calc(100vh - 170px);
   overflow: hidden;
-  margin: 120px auto 50px;
+  margin: auto;
+  height: calc(100vh - 105px);
 
   img {
     max-width: 450px;
@@ -104,15 +104,27 @@ const ContainerText = styled.div`
 
 `
 
-const ButtonConnect = styled.a`
+const ContainerLink = styled.div`
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+
+  @media screen and (max-width: 480px) {
+    flex-direction: column;
+  }
+`
+
+const ButtonLink = styled.a`
   display: flex;
   justify-content: center;
+  align-items: center;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   border-radius: 10px;
   font-size: 15px;
   color: white;
   font-weight: 600;
+  width: 90%;
   background-color: rgba(195, 58, 252);
   &:hover {
     background-color: white;
@@ -121,4 +133,4 @@ const ButtonConnect = styled.a`
   };
 `
 
-export { Container, ContainerText, ButtonConnect };
+export { Container, ContainerText, ButtonLink, ContainerLink };
