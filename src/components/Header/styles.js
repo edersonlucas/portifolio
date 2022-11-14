@@ -1,7 +1,6 @@
 import styled, { css } from 'styled-components';
 
 const Container = styled.header`
-  top: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,9 +8,23 @@ const Container = styled.header`
   height: 70px;
   background: rgb(48, 48, 50, 0.9);
   color: white;
-  position: fixed;
   z-index: 9;
   backdrop-filter: blur(4px);
+
+  > div {
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    > img {
+      margin-left: 20px;
+      @media screen and (max-width: 350px) {
+        width: 55%;
+      }
+    }
+  }
+
 `;
 
 const Button = styled.button`
@@ -67,6 +80,7 @@ const Button = styled.button`
 
 const ContainerLinks = styled.nav`
   display: flex;
+  margin-right: 20px;
 
   a{
     text-decoration: none;
