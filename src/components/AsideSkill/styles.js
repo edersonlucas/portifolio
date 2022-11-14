@@ -6,14 +6,13 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   max-width: 500px;
-  top: 0;
   right: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 105px);
   margin: auto;
   background: rgb(46, 46, 48, 0.8);
   backdrop-filter: blur(4px);
-  z-index: 99;
+  z-index: 0;
   transition: all 0.7s;
   transform: translateX(100%);
 
@@ -66,6 +65,7 @@ const ContainerSkill = styled.div`
   img {
     width: 200px;
     height: 200px;
+    margin: 20px;
   }
 
   p {
