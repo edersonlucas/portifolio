@@ -11,13 +11,13 @@ class Header extends React.Component {
       <Container>
         <div>
           <img alt="Logo Site" src={Logo}/>
-        <Button clickMenu={menuIsOpen} onClick={ onClick }><CloseIcon id="close" /><MenuIcon id="menu" /></Button>
-        <ContainerLinks>
-          <Link to="/">Início</Link>
-          <Link to="/skills">Habilidades</Link>
-          <Link to="/projects">Projetos</Link>
-          <Link>Contato</Link>
-        </ContainerLinks>
+          <Button clickMenu={menuIsOpen} onClick={ onClick }><CloseIcon id="close" /><MenuIcon id="menu" /></Button>
+          <ContainerLinks>
+            <Link to="/">Início</Link>
+            <Link to="/about">Sobre Mim</Link>
+            <Link to="/skills">Habilidades</Link>
+            <Link to="/projects">Projetos</Link>
+          </ContainerLinks>
         </div>
       </Container>
     )
