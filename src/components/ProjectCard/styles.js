@@ -2,27 +2,26 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   display: flex;
-  max-width: 500px;
+  max-width: 300px;
   width: 100%;
   flex-direction: column;
   align-items: center;
   position: relative;
   transition: all 0.4s;
-  flex: none;
+  filter: grayscale(45%);
 
   > h1 {
+    font-size: 1.5rem;
     margin: 5px;
   }
 
   &:hover {
 
-    > img {
-      filter: blur(3px) grayscale(70%) drop-shadow( 3px 3px 7px rgba(195, 58, 252));
-    }
+    filter: grayscale(0%) drop-shadow( 3px 3px 7px rgba(195, 58, 252));
 
     > a {
       opacity: 1;
-      transform: translateY(0%);
+      transform: translateY(-230%);
     }
   }
 
@@ -31,7 +30,7 @@ const Container = styled.div`
     height: 100%;
     transition: all 0.4s;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
   }
 
   > a {
@@ -41,10 +40,10 @@ const Container = styled.div`
     position: absolute;
     bottom: 0;
     margin: 10px;
-    background: rgb(46, 46, 48);
+    background: rgba(195, 58, 252);
     max-width: 300px;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     padding: 15px;
     transition: all 0.7s;
     opacity: 0;
@@ -63,4 +62,10 @@ const Container = styled.div`
   }
 `;
 
-export default Container;
+const ContainerDescription = styled.div`
+  background: rgb(48, 48, 50);
+  border-radius: 0px 0px 10px 10px;
+  padding: 10px;
+`
+
+export { Container, ContainerDescription }; 

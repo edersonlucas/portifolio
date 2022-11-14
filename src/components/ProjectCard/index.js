@@ -1,18 +1,19 @@
 import React from 'react';
-import Container from './styles';
-import imageTrybeTunes from '../../images/projects-images/images-of-projects/project_trybetunes.png';
+import { Container, ContainerDescription } from './styles';
 import LinkIcon from '@mui/icons-material/Link';
 
-class ProjectCard extends React.Component {
-  render() {
-    return (
-      <Container>
-        <h1>TrybeTunes</h1>
-        <img alt="imagem do projeto trybetunes" src={ imageTrybeTunes } />
-        <a href="https://edersontunes.vercel.app" target="_blank" rel="noreferrer" ><LinkIcon /><span>Ver Projeto</span></a>
-      </Container>
-    )
-  }
+function ProjectCard({ project }) {
+  const { name, description, alt, image, linkRepo } = project;
+  return (
+    <Container>
+      <h1>{ name }</h1>
+      <img alt={ alt } src={ image?.url } />
+      <a href={ linkRepo } target="_blank" rel="noreferrer" ><LinkIcon /><span>Acessar Repositório</span></a>
+      <ContainerDescription>
+        <p>{ description }</p>
+      </ContainerDescription>
+    </Container>
+  )
 }
 
 export default ProjectCard;
