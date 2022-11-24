@@ -19,7 +19,8 @@ const Container = styled.header`
     justify-content: space-between;
     > img {
       margin-left: 20px;
-      @media screen and (max-width: 350px) {
+      @media screen and (max-width: 400px) {
+        max-width: 170px;
         width: 55%;
       }
     }

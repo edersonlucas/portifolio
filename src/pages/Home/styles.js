@@ -6,10 +6,12 @@ const Container = styled.div`
   justify-content: center;
   color: white;
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   margin: auto;
   height: calc(100vh - 105px);
+  padding: 20px;
+  
 
   img {
     max-width: 450px;
@@ -108,6 +110,7 @@ const ContainerLink = styled.div`
   display: flex;
   gap: 10px;
   margin-top: 25px;
+  align-items: center;
 
   @media screen and (max-width: 480px) {
     flex-direction: column;

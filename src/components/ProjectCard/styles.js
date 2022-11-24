@@ -9,6 +9,7 @@ const Container = styled.div`
   position: relative;
   transition: all 0.4s;
   filter: grayscale(45%);
+  text-align: justify;
 
   > h1 {
     font-size: 1.5rem;

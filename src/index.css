@@ -7,6 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgba(33, 33, 33);
   font-size: 1rem;
+  height: -webkit-fill-available;
 }
 
 * {
@@ -17,7 +18,6 @@ body {
 @media  (max-width: 1190px){
   html {
     background-size: auto;
-    overflow: hidden;
   }
 }
 

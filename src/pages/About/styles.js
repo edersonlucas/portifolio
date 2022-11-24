@@ -6,11 +6,12 @@ const Container = styled.div`
   justify-content: center;
   color: white;
   max-width: 1000px;
-  width: 80%;
+  width: 100%;
   overflow: hidden;
   margin: auto;
   height: calc(100vh - 105px);
   padding: 20px;
+  text-align: justify;
 
   img {
     max-width: 350px;
@@ -24,6 +25,7 @@ const Container = styled.div`
 
   @media screen and (max-width: 1000px) {
     flex-direction: column;
+    padding: 5px;
     img {
       display: none;
     }

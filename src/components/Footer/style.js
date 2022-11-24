@@ -10,6 +10,12 @@ const Container = styled.footer`
   color: white;
   z-index: 9;
   backdrop-filter: blur(4px);
+
+  @media screen and (max-width: 400px) {
+    > p {
+      font-size: 0.8rem;
+    }
+  }
 `
 
 export { Container }

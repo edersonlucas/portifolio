@@ -5,7 +5,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   max-width: 1200px;
-  width: 80%;
+  width: 100%;
   color: white;
   overflow: hidden;
   height: calc(100vh - 105px);
