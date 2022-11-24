@@ -6,7 +6,7 @@ import Loading from '../../components/Loading';
 
 const GET_PROJECT_QUERY = gql`
   query {
-    projects {
+    projects(first: 100) {
       name
       description
       alt

@@ -8,7 +8,7 @@ import Loading from '../../components/Loading';
 
 const GET_SKILL_QUERY = gql`
   query {
-    skills {
+    skills(first: 100) {
       name
       description
       alt
