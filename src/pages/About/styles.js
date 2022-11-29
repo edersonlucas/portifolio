@@ -51,6 +51,7 @@ const ContainerText = styled.div`
   margin-right: 50px;
   overflow-y: auto;
   padding: 10px;
+  max-width: 550px;
 
   &::-webkit-scrollbar {
       width: 5px;
@@ -89,6 +90,9 @@ const ContainerText = styled.div`
   @media screen and (max-width: 1000px) {
     margin: 0;
     text-align: center;
+    p {
+      text-align: justify;
+    }
 
   h1 {
   font-size: 2.3rem;
